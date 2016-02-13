@@ -51,6 +51,7 @@ The localStorage key-value object is removed
 
 ## Demo
 [Full function demo](http://google.com) - Calendar with week selection/indication capability and store / retrieve in operation.
+
 [In operation](http://google.com) - Calendar with store / retrieve in operation.
 
 ## How the plugin works
