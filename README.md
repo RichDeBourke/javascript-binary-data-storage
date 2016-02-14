@@ -6,7 +6,7 @@ Store / Retrieve Binary Data in localStorage
     * The data is stored as an array of integers with the integers being processed as binary data.
     * Storing integers rather than a series of true/false reduces the overall storage requirement. One integer (max value of -1073741824) can represent 32 binary values.
         * The difference between storing an array of 520 "t" or "f" values and storing 17 integers isn't that great (~3,120 vs. 408 bytes), but it's good to save memory space when possible.
-  * Works in conjunction with the [Scrollable jQuery calendar / week selector plugin](http://github.com) for identifying weeks that have been previously selected
+  * Works in conjunction with the [Scrollable jQuery calendar / week selector plugin](https://github.com/RichDeBourke/scrollable-week-selector) for identifying weeks that have been previously selected
     * The calendar uses the localStorage plugin for tracking weeks that were previously access.
 
 ## Usage
@@ -21,11 +21,12 @@ Include the plugin and the JavaScript code to call the plugin:
             
             $("#update-button").click(function () {
                 window.updateWeeklyHistory("2012-01-01", "2016-02-07");
-            }
+            };
             
             $("#erase-button").click(function () {
                 window.clearWeeklyHistory(true);
             };
+        });
     </script>
 
 #### getWeeklyHistory
@@ -50,9 +51,9 @@ The localStorage key-value object is removed
   * Once removed, the history cannot be recovered.
 
 ## Demo
-[Full function demo](http://google.com) - Calendar with week selection/indication capability and store / retrieve in operation.
+[Full function demo](http://RichDeBourke.github.io/scrollable-week-selector) - Calendar with week selection/indication capability and store / retrieve in operation.
 
-[In operation](http://google.com) - Calendar with store / retrieve in operation.
+[In operation](http://goo.gl/Dk18xU) - Calendar with store / retrieve in operation.
 
 ## How the plugin works
 #### Initiation / process values
